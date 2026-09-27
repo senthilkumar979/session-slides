@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-09-27T08:20:54.970Z",
+  "count": 1,
+  "presentations": [
+    {
+      "slug": "before-you-join-it",
+      "title": "Before You Join IT — Build Your Professional Toolset",
+      "description": "What professional engineering looks like beyond writing code — workflows, collaboration, and the tools that support them.",
+      "category": "non-technical",
+      "tags": [
+        "career",
+        "workflow",
+        "github",
+        "collaboration",
+        "engineering"
+      ],
+      "duration": "60m",
+      "level": "beginner",
+      "author": "MentorBridge",
+      "theme": "default",
+      "draft": false,
+      "href": "/before-you-join-it/?present=1"
+    }
+  ]
+}

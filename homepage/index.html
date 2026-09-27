@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentor Bridge · Session Slides</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta
+      name="description"
+      content="Presentation slides for Mentor Bridge engineering student sessions — technical and non-technical topics."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <p class="brand">Mentor Bridge</p>
+      <h1>Session Slides</h1>
+      <p class="lede">
+        Pick a topic to open the deck in presentation mode. Use arrow keys or Space to advance; press
+        <kbd>F</kbd> or <kbd>F11</kbd> if fullscreen does not start automatically.
+      </p>
+    </header>
+
+    <main>
+      <div class="toolbar">
+        <label class="search">
+          <span class="sr-only">Search topics</span>
+          <input id="search" type="search" placeholder="Search topics, tags…" autocomplete="off" />
+        </label>
+        <div class="filters" id="filters" role="tablist" aria-label="Category filter"></div>
+      </div>
+
+      <p class="meta" id="meta"></p>
+      <div id="grid" class="grid"></div>
+      <p id="empty" class="empty hidden">No topics match your filters.</p>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built with <a href="https://sli.dev/" target="_blank" rel="noreferrer">Slidev</a> · Add a deck via <code>pnpm new &lt;slug&gt;</code></p>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

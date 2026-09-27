@@ -1,0 +1,26 @@
+{
+  "name": "session-slides",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:home": "node scripts/dev.mjs --home",
+    "build": "node scripts/build.mjs",
+    "preview": "npx serve dist -p 4173",
+    "new": "node scripts/new.mjs",
+    "catalog": "node scripts/catalog.mjs",
+    "export": "node scripts/export.mjs"
+  },
+  "dependencies": {
+    "@slidev/cli": "^53.0.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.33"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.2.28",
+    "@iconify-json/logos": "^1.2.14",
+    "serve": "^14.2.4"
+  }
+}

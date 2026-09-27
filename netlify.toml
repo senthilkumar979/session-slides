@@ -1,0 +1,17 @@
+[build]
+publish = "dist"
+command = "pnpm build"
+
+[build.environment]
+NODE_VERSION = "22"
+PNPM_VERSION = "9"
+
+[[redirects]]
+from = "/.well-known/*"
+to = "/.well-known/:splat"
+status = 200
+
+[[redirects]]
+from = "/:deck/*"
+to = "/:deck/index.html"
+status = 200
