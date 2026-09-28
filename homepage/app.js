@@ -125,6 +125,9 @@ searchInput.addEventListener('input', () => {
   render()
 })
 
+const yearEl = document.getElementById('year')
+if (yearEl) yearEl.textContent = String(new Date().getFullYear())
+
 loadCatalog().catch((err) => {
   meta.textContent = 'Could not load catalog. Run `pnpm catalog` or `pnpm build`.'
   console.error(err)

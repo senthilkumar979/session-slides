@@ -3,29 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mentor Bridge · Session Slides</title>
+    <title>MentorBridge · Session Slides</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta
       name="description"
-      content="Presentation slides for Mentor Bridge engineering student sessions — technical and non-technical topics."
+      content="Presentation slides for MentorBridge engineering student sessions — technical and non-technical topics."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="atmosphere" aria-hidden="true"></div>
+    <nav class="navbar" aria-label="Primary">
+      <a class="navbar-brand" href="./">
+        <img src="./mentorbridge-logo.jpg" alt="MentorBridge" class="navbar-logo" width="200" height="48" />
+      </a>
+      <div class="navbar-links">
+        <a href="https://mentorbridge.in/" target="_blank" rel="noreferrer">Website</a>
+        <a href="https://mentorbridge.in/" target="_blank" rel="noreferrer" class="navbar-cta">Get mentored</a>
+      </div>
+    </nav>
 
-    <header class="site-header">
-      <p class="brand">Mentor Bridge</p>
+    <header class="hero">
+      <p class="kicker">MentorBridge Sessions</p>
       <h1>Session Slides</h1>
       <p class="lede">
-        Pick a topic to open the deck in presentation mode. Use arrow keys or Space to advance; press
-        <kbd>F</kbd> or <kbd>F11</kbd> if fullscreen does not start automatically.
+        Browse topics for engineering students. Open a deck to present — use arrow keys or Space to
+        advance; press <kbd>F</kbd> or <kbd>F11</kbd> for fullscreen.
       </p>
     </header>
 
@@ -44,7 +52,39 @@
     </main>
 
     <footer class="site-footer">
-      <p>Built with <a href="https://sli.dev/" target="_blank" rel="noreferrer">Slidev</a> · Add a deck via <code>pnpm new &lt;slug&gt;</code></p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="./mentorbridge-logo.jpg" alt="MentorBridge" class="footer-logo" width="180" height="44" />
+          <p class="footer-tagline">Guiding your journey to success</p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h3>Sessions</h3>
+            <ul>
+              <li><a href="./">All topics</a></li>
+              <li><a href="https://sli.dev/" target="_blank" rel="noreferrer">Built with Slidev</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>MentorBridge</h3>
+            <ul>
+              <li><a href="https://mentorbridge.in/" target="_blank" rel="noreferrer">Website</a></li>
+              <li><a href="mailto:mentorbridgeindia@gmail.com">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>For mentors</h3>
+            <ul>
+              <li><code>pnpm new &lt;slug&gt;</code></li>
+              <li><code>pnpm dev &lt;slug&gt;</code></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> MentorBridge</span>
+        <span>mentorbridge.in</span>
+      </div>
     </footer>
 
     <script type="module" src="./app.js"></script>

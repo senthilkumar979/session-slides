@@ -53,7 +53,10 @@ cpSync(join(homepageSrc, 'index.html'), join(DIST_DIR, 'index.html'))
 cpSync(join(homepageSrc, 'styles.css'), join(DIST_DIR, 'styles.css'))
 cpSync(join(homepageSrc, 'app.js'), join(DIST_DIR, 'app.js'))
 cpSync(join(homepageSrc, 'catalog.json'), join(DIST_DIR, 'catalog.json'))
-
+for (const asset of ['mentorbridge-logo.jpg', 'favicon.svg']) {
+  const src = join(homepageSrc, asset)
+  if (existsSync(src)) cpSync(src, join(DIST_DIR, asset))
+}
 if (existsSync(join(ROOT, 'public'))) {
   cpSync(join(ROOT, 'public'), DIST_DIR, { recursive: true })
 }
